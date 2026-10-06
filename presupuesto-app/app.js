@@ -1,7 +1,7 @@
 // ─── CONFIG ──────────────────────────────────────────────────
 // 🔧 Reemplaza con tus valores de Supabase: Settings → API
 const SUPABASE_URL = 'https://aaaxtibbolugbqvlqumn.supabase.coo';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFhYXh0aWJib2x1Z2JxdmxxdW1uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEyNjA1MzYsImV4cCI6MjEwNjgzNjUzNn0.Z-LzrgcRB6daw19GFBiWzTLsm9ggeDGb4r8ZlI9oFDM';
+const SUPABASE_KEY = 'sb_publishable__hiCAH5WhMnrYWuqVR7-bA_g8e09RoI';
 
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
