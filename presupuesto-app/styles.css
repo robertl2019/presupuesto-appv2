@@ -392,6 +392,56 @@ tr:hover td { background: rgba(255,255,255,0.02); }
 #toast.ok   { border-left: 3px solid var(--green); }
 #toast.err  { border-left: 3px solid var(--red); }
 
+/* ─── MERCADO DIFF BAR ───────────────────────────────────── */
+.mercado-diff-bar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.mercado-diff-bar > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 110px;
+}
+.diff-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  font-weight: 600;
+  color: var(--fg3);
+}
+.diff-val {
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.diff-sep {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+  align-self: center;
+}
+td.diff-plus  { color: var(--red);   font-weight: 600; }
+td.diff-minus { color: var(--green); font-weight: 600; }
+td.diff-zero  { color: var(--fg3); }
+
+/* ─── TC HIGHLIGHT ───────────────────────────────────────── */
+tr.tc-row td { background: rgba(255,183,77,0.04); }
+
+/* ─── HINT TEXT ──────────────────────────────────────────── */
+.field-hint {
+  font-size: 11px;
+  color: var(--fg3);
+  margin-top: 4px;
+}
+
 /* ─── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 680px) {
   #app { flex-direction: column; }
